@@ -22,6 +22,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.CreateDBIfNotExist();//Extensions.cs
 }
 
 app.UseHttpsRedirection();

@@ -13,8 +13,3 @@ WORKDIR /app
 COPY --from=build /app/publish .
 ENTRYPOINT ["dotnet", "WineCellarAPI.dll"]
 
-# Build the Docker image
-#docker build -t winecellarapi .
-
-# Run the Docker container
-#docker run -d -p 8080:80 winecellarapi
