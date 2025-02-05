@@ -8,9 +8,12 @@ public class Wine
 {
     public int Id { get; set; }
 
-    [Required]
     [MaxLength(100)]
     public string? Name { get; set; }
+
+    [Required]
+    [MaxLength(100)]
+    public string? Maker { get; set; }
 
     [MaxLength(4)]
     public int? Year { get; set; }
@@ -24,6 +27,8 @@ public class Wine
 
     [MaxLength(240)]
     public string? Description { get; set; }
+
+    public ICollection<GrapeVariety>? GrapeVarieties { get; set; }
 
     public ICollection<Aroma>? Aromas { get; set; }
 
