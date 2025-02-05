@@ -1,10 +1,10 @@
-using WineCellarAPI.Data;
-using WineCellarAPI.Services;
+// using WineCellarAPI.Data;
+// using WineCellarAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-//builder.Services.AddOpenApi();
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -12,7 +12,7 @@ builder.Services.AddSwaggerGen();
 
 //add db as data source
 builder.Services.AddSqlite<WineCellarContext>("Data Source=WineCellar.db");
-builder.Services.AddScoped<WineCellarContext>();
+builder.Services.AddScoped<WineCellarService>();
 
 var app = builder.Build();
 

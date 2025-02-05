@@ -1,7 +1,6 @@
-using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace WineCellarAPI.Models;
+// namespace WineCellarAPI.Models;
 
 //this is a data model(table) for sqlite
 public class Wine

@@ -1,6 +1,6 @@
-using WineCellarAPI.Models;
+// using WineCellarAPI.Models;
 
-namespace WineCellarAPI.Data;
+// namespace WineCellarAPI.Data;
 
 public static class DbInitializer
 {

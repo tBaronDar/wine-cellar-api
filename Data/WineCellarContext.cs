@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using WineCellarAPI.Models;
+// using WineCellarAPI.Models;
 
-namespace WineCellarAPI.Data;
+// namespace WineCellarAPI.Data;
 public class WineCellarContext : DbContext
 {
     public WineCellarContext(DbContextOptions<WineCellarContext> options)

@@ -1,4 +1,4 @@
-namespace WineCellarAPI.Data;
+// namespace WineCellarAPI.Data;
 
 public static class Extensions
 {

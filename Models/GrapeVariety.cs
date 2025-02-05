@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace WineCellarAPI.Models;
+// namespace WineCellarAPI.Models;
 
 //this is a data model
 public class GrapeVariety
