@@ -21,10 +21,10 @@ public class WineCellarController : ControllerBase
         return _service.GetAllWines();
     }
 
-    [HttpGet("{Id}")]
-    public ActionResult<Wine> GetWineById(int Id)
+    [HttpGet("{id}")]
+    public ActionResult<Wine> GetWineById(int id)
     {
-        var wine = _service.GetWineById(Id);
+        var wine = _service.GetWineById(id);
         if (wine is null)
         {
             return NotFound();
@@ -35,4 +35,17 @@ public class WineCellarController : ControllerBase
         }
     }
 
+    [HttpPost("{wine}")]
+    public ActionResult<Wine> CreateNewWine(Wine wine)
+    {
+        _service.CreateWine(wine);
+        return wine;
+    }
+
+    [HttpDelete("{id}")]
+    public ActionResult<int> DeleteWine(int id)
+    {
+        _service.DeleteWineById(id);
+        return id;
+    }
 }

@@ -1,6 +1,5 @@
 // using WineCellarAPI.Data;
 // using WineCellarAPI.Models;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
 // namespace WineCellarAPI.Services;
@@ -50,7 +49,7 @@ public class WineCellarService
 
     }
 
-    //Update, what?
+    //Update, what? not sure yet
     public void UpdateWine(Wine wine)
     {
         var wineToReplace = _context.Wines.SingleOrDefault(w => w.Id == wine.Id);

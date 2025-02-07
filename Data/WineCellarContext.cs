@@ -14,4 +14,6 @@ public class WineCellarContext : DbContext
     public DbSet<Aroma> Aromas => Set<Aroma>();
     public DbSet<GrapeVariety> GrapeVarieties => Set<GrapeVariety>();
 
+    //I should create a User table
+
 }

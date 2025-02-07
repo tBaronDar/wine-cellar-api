@@ -14,6 +14,14 @@ public class Wine
     [MaxLength(100)]
     public string? Maker { get; set; }
 
+    [Required]
+    [MaxLength(10)]
+    public float? Price { get; set; }
+
+    [Required]
+    [MaxLength(5)]
+    public decimal? PriceMod { get; set; } = 1.00m;
+
     [MaxLength(4)]
     public int? Year { get; set; }
 
